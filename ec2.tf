@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   ami           = "ami-0437df53acb2bbbfd"
   instance_type = "t3.micro"
-  security_groups = [aws_security_group.snp24082024.name]
+  security_groups = [aws_security_group.snpann1358.name]
   key_name = aws_key_pair.key_pair.key_name
 
   tags = {
@@ -9,9 +9,9 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "snp24082024" {
-  name        = "security group using snp24082024"
-  description = "security group using snp24082024"
+resource "aws_security_group" "snpann1358" {
+  name        = "security group using snpann1358"
+  description = "security group using snpann1358"
   vpc_id      = "vpc-02ba44b7a39262c8e"
 
   ingress {
@@ -46,6 +46,6 @@ resource "aws_security_group" "snp24082024" {
   }
 
   tags = {
-    Name = "snp24082024"
+    Name = "snpann1358"
   }
 }
