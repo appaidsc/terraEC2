@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   key_name = aws_key_pair.key_pair.key_name
 
   tags = {
-    Name = "HelloWorld"
+    Name = "Random"
   }
 }
 
