@@ -5,7 +5,7 @@ resource "tls_private_key" "key_pair" {
 }
 # Create the Key Pair
 resource "aws_key_pair" "key_pair" {
-  key_name   = "snp24082025-sa4b-ec2-key-pair"  
+  key_name   = "snp1358-sa4b-ec2-key-pair"  
   public_key = tls_private_key.key_pair.public_key_openssh
 }
 # Save file
